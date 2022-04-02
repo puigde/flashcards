@@ -1,0 +1,2 @@
+Balanceig de càrrega,Equilibrar al màxim la quantitat de treball de cada thread per a tenir un mínim "idle" time,equlibri treball,
+T(1),Temps d'execució seqüencial,seq,
