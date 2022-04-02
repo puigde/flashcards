@@ -98,26 +98,30 @@ void printdata()
 void studymode(mt19937_64 &rng)
 {
     int n = cards.size();
+    int current_id = 0;
+    int action_number = 1;
     while (true)
     {
-        cout << "NEXT LABEL is: ";
-        int current_id = randint(rng, 0, n - 1);
-        cards[current_id].printlabel();
-        cout << "Input 1 to show answer" << endl;
-        cout << "Input 2 to show a hint" << endl;
-        int action_number;
+        if (action_number == 1)
+        {
+            cout << "NEXT LABEL is: ";
+            current_id = randint(rng, 0, n - 1);
+            cards[current_id].printlabel();
+            cout << "Input 1 to show answer" << endl;
+            cout << "Input 2 to show a hint" << endl;
+        }
         cin >> action_number;
         if (action_number == 1)
         {
             cards[current_id].printanswer();
+            cout << "---------------------------------------------" << endl;
+            cout << endl;
+            cout << endl;
         }
         else
         {
             cards[current_id].showhint();
         }
-        cout << "---------------------------------------------" << endl;
-        cout << endl;
-        cout << endl;
     }
 }
 int main()
