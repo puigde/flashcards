@@ -8,7 +8,7 @@ How to use (simple steps):
 -> open your terminal and compile with: clang++ -std=c++17 -O2 -Wall flashcards.cc\
 -> execute on terminal with: ./a.out\
 -> select the path to your data txt file and press ENTER\
-start learning :):)\
+start learning :):)
 
 NOTE: current data format supported is: label,answer,hint, 
 check the PSD.txt file as an example in the repo.
