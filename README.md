@@ -10,8 +10,8 @@ How to use (simple steps):
 -> select the path to your data txt file and press ENTER\
 start learning :):)
 
-NOTE: current data format supported is: label,answer,hint, 
+NOTE: current data format supported is: label,answer,hint,\ 
 check the PSD.txt file as an example in the repo.
 
-NOTE: if having trouble with the filepath put the executable (a.out) file in the same folder as the data.txt file with your flashcards data and should work fine.
+NOTE: if having trouble with the filepath put the executable (a.out) file in the same folder as the data.txt file with your flashcards data and it should work fine.
 
