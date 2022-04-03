@@ -23,14 +23,21 @@ public:
     {
         cout << "Here's a hint: " << hint << endl;
     }
-
-private:
-    double importance = 1; // indicates the importance a flashcard has, 1 default, 2 twice more importance, etc.
+    int importance = 1; // indicates the importance a flashcard has 1 for max importance, higher values for less importance 1 imp will apear n times more than n imp
+    int turns = importance;
 
     // implement penalization for missed answers so harder concepts get consolidated
-    void mod_importance(double factor)
+    void mod_importance(int newvalue)
     {
-        importance *= factor;
+        importance = newvalue;
+    }
+    void turn()
+    {
+        turns--;
+    }
+    void reset_turn()
+    {
+        turns = importance;
     }
 };
 using fvect = vector<Flashcard>;
@@ -105,10 +112,18 @@ void studymode(mt19937_64 &rng)
         if (action_number == 1)
         {
             cout << "NEXT LABEL is: ";
+
             current_id = randint(rng, 0, n - 1);
+            while (cards[current_id].turns > 0)
+            {
+                current_id = randint(rng, 0, n - 1);
+                cards[current_id].turn();
+            }
+            cards[current_id].reset_turn();
             cards[current_id].printlabel();
             cout << "Input 1 to show answer" << endl;
             cout << "Input 2 to show a hint" << endl;
+            cout << "Input 3 to modify importance of a flashcard" << endl;
         }
         cin >> action_number;
         if (action_number == 1)
@@ -118,9 +133,16 @@ void studymode(mt19937_64 &rng)
             cout << endl;
             cout << endl;
         }
-        else
+        else if (action_number == 1)
         {
             cards[current_id].showhint();
+        }
+        else
+        {
+            cout << "Select the new importance" << endl;
+            int nimp;
+            cin >> nimp;
+            cards[current_id].mod_importance(nimp);
         }
     }
 }
