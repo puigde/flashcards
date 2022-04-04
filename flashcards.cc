@@ -133,16 +133,24 @@ void studymode(mt19937_64 &rng)
             cout << endl;
             cout << endl;
         }
-        else if (action_number == 1)
+        else if (action_number == 2)
         {
             cards[current_id].showhint();
         }
-        else
+        else if (action_number == 3)
         {
             cout << "Select the new importance" << endl;
             int nimp;
             cin >> nimp;
             cards[current_id].mod_importance(nimp);
+            cards[current_id].reset_turn();
+            cout << "Importance parameter has been modified" << endl;
+            cout << "Input 1 to show answer" << endl;
+            cout << "Input 2 to show a hint" << endl;
+        }
+        else
+        {
+            cout << "Please Input a valid option" << endl;
         }
     }
 }
