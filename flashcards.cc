@@ -126,7 +126,8 @@ void studymode(mt19937_64 &rng)
             cout << "Input 2 to show a hint" << endl;
             cout << "Input 3 to modify importance of a flashcard" << endl;
         }
-        cin >> action_number;
+        if (action_number < 4 and action_number > 0) // patch cutre
+            cin >> action_number;
         if (action_number == 1)
         {
             cards[current_id].printanswer();
@@ -152,6 +153,7 @@ void studymode(mt19937_64 &rng)
         else
         {
             cout << "Please Input a valid option" << endl;
+            cin >> action_number;
         }
     }
 }
