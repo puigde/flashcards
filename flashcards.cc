@@ -164,12 +164,16 @@ int main()
     mt19937_64 rng(seed);
     //
     cards = fvect();
-    cout << "Please specify a filepath below" << endl;
-    string filepath;
-    cin >> filepath;
-    // read the flashcards
-    read_flashcards(filepath);
-    //
+    cout << "Please input the number of files you want to extract flashcards from" << endl;
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Please specify the filepath below" << endl;
+        string filepath;
+        cin >> filepath;
+        read_flashcards(filepath);
+    }
     cout << "succesfull read" << endl;
     printdata();
     cout << "Entering study mode:" << endl;
