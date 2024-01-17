@@ -45,7 +45,7 @@ using fvect = vector<Flashcard>;
 fvect cards;
 
 // Reads the flashcards from a specified txt file which has for each line the format [Label,Answer,Hint,]
-void read_flashcards(string filepath)
+void read_flashcards(string filepath, string delimiter = "::")
 {
     fstream file;
     file.open(filepath, ios::in);
@@ -56,7 +56,6 @@ void read_flashcards(string filepath)
         {
             Flashcard toinsert_card;
             int minicounter = 0;
-            string delimiter = ",";
             size_t pos = 0;
             string token;
             while ((pos = tp.find(delimiter)) != std::string::npos)
@@ -172,7 +171,10 @@ int main()
         cout << "Please specify the filepath below" << endl;
         string filepath;
         cin >> filepath;
-        read_flashcards(filepath);
+        cout << "Please specify the delimiter below" << endl;
+        string delimiter;
+        cin >> delimiter;
+        read_flashcards(filepath, delimiter);
     }
     cout << "succesfull read" << endl;
     printdata();
