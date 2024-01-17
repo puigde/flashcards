@@ -40,7 +40,7 @@ Define matching:: A matching is a set of edges such that no two edges share a ve
 State Hall's theorem:: A bipartite graph G has a matching of size |X| iff for every subset X of V(G) we have |N(X)| >= |X|:: ::
 Define bi-stochastic matrix:: A bi-stochastic matrix is a matrix with non-negative entries such that the sum of the entries in each row and column is 1:: ::
 Complete the theorem, for any bi-stochastic matrix A there is a permutation matrix P such that ...:: PA is doubly stochastic:: ::
-Recall the problem with N keys and N boxes with one treasure and state the minimum number of moves:: (N/2)-1:: ::
+Recall the problem with N keys and N boxes with one treasure and state the minimum number of moves:: (N/2)+1:: ::
 Define alternating path:: An alternating path is a path where the edges alternate between edges in the matching and edges not in the matching:: ::
 Define augmenting path:: An augmenting path is an alternating path that starts and ends with edges not in the matching:: ::
 Define maximum matching:: A maximum matching is a matching of maximum size:: ::
