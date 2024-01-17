@@ -102,7 +102,7 @@ void printdata()
     }
 }
 // Enters studymode
-void studymode(mt19937_64 &rng)
+void studymode_random_weighted(mt19937_64 &rng)
 {
     int n = cards.size();
     int current_id = 0;
@@ -156,6 +156,57 @@ void studymode(mt19937_64 &rng)
         }
     }
 }
+
+void studymode_heap(mt19937_64 &rng){
+    int action_number = 1;
+    int idx = randint(rng, 0, cards.size()-1);
+    while (cards.size() > 0){
+        if (action_number == 1){
+            cout << "NEXT LABEL is: ";
+            cards[idx].printlabel();
+            cout << "Input 1 to show answer" << endl;
+            cout << "Input 2 to show a hint" << endl;
+        }
+        if (action_number < 4 and action_number > 0) // patch cutre
+            cin >> action_number;
+        if (action_number == 1)
+        {
+            cards[idx].printanswer();
+            cout << "---------------------------------------------" << endl;
+            cout << endl;
+            cout << endl;
+            cout << "Input 1 to keep the flashcard" << endl;
+            cout << "Input 2 to remove the flashcard" << endl;
+            int keep;
+            cin >> keep;
+            if (keep==1){
+                idx = randint(rng, 0, cards.size()-1);
+            }
+            else if (keep==2){
+                cards.erase(cards.begin() + idx);
+                idx = randint(rng, 0, cards.size()-1);
+                cout << "Flashcard removed, you have " << cards.size() << " flashcards left" << endl;
+                cout << "---------------------------------------------" << endl;
+                cout << endl;
+                cout << endl;
+            }
+            else{
+                cout << "Please input a valid option" << endl;
+                cin >> keep;
+            }
+        }
+        else if (action_number == 2)
+        {
+            cards[idx].showhint();
+        }
+        else
+        {
+            cout << "Please Input a valid option" << endl;
+            cin >> action_number;
+        }
+    }
+    cout << "You have finished the study session" << endl;
+}
 int main()
 {
     // Random module part
@@ -176,8 +227,20 @@ int main()
         cin >> delimiter;
         read_flashcards(filepath, delimiter);
     }
-    cout << "succesfull read" << endl;
-    printdata();
-    cout << "Entering study mode:" << endl;
-    studymode(rng);
+    cout << "Data has been loaded, you have" << cards.size() << " flashcards" << endl;
+    cout << "Select the study mode" << endl;
+    cout << "Input 1 for random weighted: you can select the importance of each flashcard and they will be shown randomly according to their importance" << endl;
+    cout << "Input 2 for heap: you start with all the cards, cards are chosen uniformly at random, you can choose when to remove a card" << endl;
+    int mode;
+    cin >> mode;
+    if (mode == 1){
+        studymode_random_weighted(rng);
+    }
+    else if (mode == 2){
+        studymode_heap(rng);
+    }
+    else{
+        cout << "Please input a valid option" << endl;
+        cin >> mode;
+    }
 }
