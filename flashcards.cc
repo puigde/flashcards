@@ -84,6 +84,20 @@ void read_flashcards(string filepath, string delimiter = "::")
     file.close();
 }
 
+void save_checkpoint(string filepath, string delimiter = "::")
+{
+    fstream file;
+    file.open(filepath, ios::out);
+    if (file.is_open())
+    {
+        for (Flashcard card : cards)
+        {
+            file << card.label << delimiter << card.answer << delimiter << card.hint << delimiter << endl;
+        }
+    }
+    file.close();
+}
+
 // Returns a random integer between lb and ub both included
 int randint(mt19937_64 &rng, int lb, int ub)
 {
@@ -166,6 +180,7 @@ void studymode_heap(mt19937_64 &rng){
             cards[idx].printlabel();
             cout << "Input 1 to show answer" << endl;
             cout << "Input 2 to show a hint" << endl;
+            cout << "Input 3 to save a checkpoint" << endl;
         }
         if (action_number < 4 and action_number > 0) // patch cutre
             cin >> action_number;
@@ -198,6 +213,11 @@ void studymode_heap(mt19937_64 &rng){
         else if (action_number == 2)
         {
             cards[idx].showhint();
+        }
+        else if (action_number == 3){
+            string filepath = "checkpoint_" + to_string(cards.size()) + ".txt";
+            save_checkpoint(filepath);
+            cout << "Checkpoint saved" << endl;
         }
         else
         {
