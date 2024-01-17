@@ -1,0 +1,121 @@
+Define Eulerian Tour:: An Eulerian tour is a walk on the graph that includes every edge exactly once and starts and ends at the same vertex:: ::
+Complete the theorem, G has an Eulerian tour iff ...:: G is connected and the degree of all vertices is even:: ::
+Define Eulerian Path:: An Eulerain path is a walk on the graph that includes every edge exactly once:: ::
+Complete the theorem, G has an Eulerian path iff ...:: G is connected and the degree of all  vertices is even except for at most 2 vertices:: ::
+Define Directed Graph:: A directed graph is a graph where the edges have a direction:: ::
+Complete the Theorem, A directed graph G has an Eulerian tour iff ...:: G is connected and the in-degree of all vertices is equal to the out-degree of all vertices:: ::
+Define Hamiltonian Path:: A Hamiltonian path is a path that visits every vertex exactly once:: ::
+Define Hamiltonian Cycle:: A Hamiltonian cycle is a cycle that visits every vertex exactly once:: ::
+Complete the sentence, If G has a hamiltonian cycle then each vertex is incident to ...:: 2 edges of G:: ::
+Name three families of graphs that are Hamiltonian and one that is not:: Complete graphs; Bipartite graphs of the form K_{n n}; Cycles; Trees are not Hamiltonian and bipartite graphs with K_{n m} and n!=m are also not Hamiltonian:: ::
+Complete the theorem if n >= ... and d(G) >= ... then G is Hamiltonian:: 3; n/2:: ::
+Define R(s1; s2; ...; sk):: The Ramsey number R(s1; s2; ...; sk) is the smallest n such that every graph G with n vertices contains a clique of size sk or an independent set of size sk:: ::
+Complete the theorem R(s1; s2; ...; sk) is ...:: R(s1; s2; ...; sk) is well defined:: ::
+State Schur's theorem:: For all k>=1 if there is n(k) such that in any colouring of the integers 1 to n(k) with k colours there is a monochromatic solution to x+y=z:: ::
+State Fermat's Last Theorem:: For all n>=3 there are no positive integers x, y, z such that x^n+y^n=z^n:: ::
+Complete the theorem, x^n+... has solution ... for any ...:: x^n+y^n+z^n has solution modulo p for any large enough prime p:: ::
+Define hypergraph:: A hypergraph is a generalisation of a graph where edges can have any number of vertices:: ::
+Define R^3(s,t):: In the context of hypergraphs R^3(s,t) is the minimum number n such that if we color the edges of the complete 3-uniform hypergraph on n vertices red and blue then there is a red copy of K_s or a blue copy of K_t:: ::
+Give an upper bound for R^3(4,4):: 1+R(4,4):: ::
+Complete the sentence, Given a set of n points in the plane we can find a large subset ...:: in convex position:: ::
+Complete the sentence, Every set of n points in the plane either has ... or ...:: many points in general position or many points in one line:: ::
+Complete the sentence, many times the bounds given by Ramsey's theory to geometric problems are:: not tight:: ::
+Define R(s,s):: R(s,s) is the minimum number n such that if we colour the edges of the complete graph on n vertices red and blue then there is a red copy of K_s or a blue copy of K_s:: ::
+Define R(s,t):: R(s,t) is the minimum number n such that if we colour the edges of the complete graph on n vertices red and blue then there is a red copy of K_s or a blue copy of K_t:: ::
+R(3,3)=...:: 6:: ::
+R(3,3,3)=...:: 17:: ::
+R(s,t)<=... (as a recurrence):: R(s-1,t)+R(s,t-1):: ::
+R(s,t)<= ... (as a number):: s-1 choose s+t-2:: ::
+In particular R(s,s)<=...:: s-1 choose 2s-2 <= 2^(2s-2):: ::
+Complete the sentence Ramsey is true ...:: also for infinite graphs, in any two coloring of the edges of the complete graph on \mathbb{N} there is an infinite monochromatic subgraph:: ::
+Complete the sentence, Every sequence of real numbers has a ... in particular every bounded sequence has a ...:: monotone subsequence, converging subsequence:: ::
+Complete the theorem, There are colorings of the edges of the complete graph on ... vertices with no ...:: 2^s, monochromatic K_s:: ::
+State Borge's theorem:: A matching is maximum iff there is no augmenting path:: ::
+Recall the archipelag puzzle and name a winning strategy:: take a maximum matching, start outside and navigate with edges of the matching:: ::
+State the idea of the proof, given a nxn table with the numbers 1, ..., n each appearing n times we can permute the columns such that we have all the numbers 1,...,n in each row:: look at the last row and show that it holds by applying Hall's theorem, remove it and apply induction:: ::
+Complete the theorem, G bipartite and N(X) \geq |X| - c then ...:: G has a matching of size |X| - c:: ::
+Define vertex cover:: A vertex cover is a set of vertices such that every edge is incident to at least one vertex in the set:: ::
+State Konig's theorem:: In a bipartite graph the size of the maximum matching is equal to the size of the minimum vertex cover:: ::
+Define matching:: A matching is a set of edges such that no two edges share a vertex:: ::
+State Hall's theorem:: A bipartite graph G has a matching of size |X| iff for every subset X of V(G) we have |N(X)| >= |X|:: ::
+Define bi-stochastic matrix:: A bi-stochastic matrix is a matrix with non-negative entries such that the sum of the entries in each row and column is 1:: ::
+Complete the theorem, for any bi-stochastic matrix A there is a permutation matrix P such that ...:: PA is doubly stochastic:: ::
+Recall the problem with N keys and N boxes with one treasure and state the minimum number of moves:: (N/2)-1:: ::
+Define alternating path:: An alternating path is a path where the edges alternate between edges in the matching and edges not in the matching:: ::
+Define augmenting path:: An augmenting path is an alternating path that starts and ends with edges not in the matching:: ::
+Define maximum matching:: A maximum matching is a matching of maximum size:: ::
+Define crossing number:: The crossing number of a graph is the minimum number of crossings in a drawing of the graph in the plane:: ::
+The crossing number of a planar graph is ...:: 0:: ::
+Cr(G) \geq ... (the simple one):: m(G)-3n(G)+6:: ::
+State the crossing number inequality:: Cr(G) \geq (1/64) E^3/V^2:: ::
+State the proof idea for the crossing number inequality:: random coloring of a graph with prob p, use the simple inequality to bound the expectation of the crossing number and then maximize over p:: ::
+State Elekes theorem:: max(|A+A|, |AA|) >= c|A|^{5/4}:: ::
+Define a planar graph:: A planar graph is a graph that can be drawn in the plane without any edges crossing:: ::
+Define a planar map or drawing:: A planar map or drawing is a drawing of a planar graph in the plane:: ::
+Define a face of a planar graph:: A face of a planar graph is a connected component of the complement of the graph in the plane:: ::
+State Koebe's theorem:: Every planar graph has a planar map with all vertices on the boundary, informally- it can be drawn as a map of coins:: ::
+State Euler's formula:: V-E+F=1+C:: ::
+For planar graphs |E| \leq ...:: 3|V|-6:: ::
+For bipartite planar graphs and planar graphs with no triangles in general |E| \leq ...:: 2|V|-4:: ::
+State Kuratowski's theorem:: A graph is planar iff it does not contain a subdivision of K_5 or K_{3 3}:: ::
+State a corollary for Kuratowski's theorem:: Every planar graph has a vertex of degree at most 5:: ::
+Every planar graph can be colored with ... colors:: 6:: ::
+Complete the theorem, A planar map is bipartite iff ...:: every face has even size:: ::
+A geometric graph with no pair of avoiding edges has ...:: 2n-2 edges:: ::
+Define the chromatic number of a graph:: The chromatic number of a graph is the minimum number of colors needed to color the vertices such that no two adjacent vertices have the same color:: ::
+Define the clique number of a graph and give a bound for the chromatic number:: W(G) \leq \chi(G):: ::
+Define the max size of an independent set and give a bound for the chromatic number:: \alpha(G) \leq n/\chi(G):: ::
+Define \delta(G) and give a bound for \chi(G):: \delta(G) is max_{v \in G}(deg(v))\chi(G) \leq \delta(G) + 1:: ::
+Define the chromatic polynomial of a graph:: The chromatic polynomial of a graph is the number of ways to color the vertices of the graph with k colors such that no two adjacent vertices have the same color:: ::
+For a graph on p verives the chromatic polynomial is a polynomial of degree ...:: p:: ::
+The chromatic polynomial of a non-connected graph is ...:: the product of the chromatic polynomials of its components:: ::
+The chromatic polynomial of a graph with a loop is ...:: 0:: ::
+State a way of constructing graphs with W(G)=2 and large \chi(G):: get \chi(G) copies of G and attach them to a new vertex to increase \chi(G) by 1:: ::
+State the four colour theorem informally:: Consider a setup where we have a map of the world and we want to color the countries such that no two adjacent countries have the same color, then we can do it with 4 colors:: ::
+Complete the sentence the chromatic number of a planar graph is between ... and ... and in space in between ... and ...:: 5 and 7 and 6 and 15:: ::
+The chromatic polynomial of a tree is ...:: k(k-1)^{n-1}:: ::
+The chromatic polynomial of a cycle is ...:: k(k-1)^{n} + (-1)^n (k-1):: ::
+The chromatic polynomial of a complete graph is ...:: k(k-1)(k-2)...(k-n+1):: ::
+State Kovari-Sos-Turan theorem:: If G does not contain K_r,s then G has O(n^{2-1/r}) edges:: ::
+State Bondy-Simonovich theorem:: If G does not contain C_{2r} then G has less than n^{1+1/r} edges:: ::
+If G does not contain a T_k then ...:: G has O(n) edges:: ::
+Complete the theorem, There is a subgraph of G with average degree ... with minimum degree at least ...:: d, d/2 where d is the average degree for the graph:: ::
+State the Cauchy Binet Formula:: let A, B two kxm matrices then det(AB^T) = \sum_{S \in [m]^k} det(A_S) det(B_S):: ::
+Define Ex(G, n):: Ex(G, n) is the maximum number of edges in a graph on n vertices that does not contain G as a subgraph:: ::
+Ex(K3, n) = ...:: n^2/4:: ::
+Ex(K_r, n) = ...:: 0.5 * n^2 * (1-1/(r-1)) = 2 choose r-1 * n^2:: ::
+Give a lower bound for Ex(H, n) if H is not bipartite:: n^2/4:: ::
+The prüffer to tree is a ...:: bijection:: ::
+Define the vertex incidence matrix:: The vertex incidence matrix is a matrix where the rows are indexed by the vertices and the columns by the edges and the entry is 1 if the vertex is incident to the edge and 0 otherwise:: ::
+Define the laplacian matrix of a graph:: The laplacian matrix of a graph is the matrix L = D-A where D is the diagonal matrix of the degrees and A is the adjacency matrix:: ::
+State Kirchoff's Matrix Tree theorem:: det L(G)[i] for any i is the number of spanning trees in G:: ::
+State a corollary for the theorem for the number of spanning trees in a graph:: (1/n) * lambda_1 * ... * lambda_{n-1} for the non-zero eigenvalues of the laplacian matrix:: ::
+The Laplacian matrix is ...:: singular as it has a zero eigenvalue with eigenvector (1, ..., 1):: ::
+The sum of eigenvalues of the Laplacian matrix is ...:: 0:: ::
+Denote the laplacian of the complete graph:: L = nI - J where J is the all ones matrix:: ::
+Denote the eigenvalues of the Laplacian of the complete graph:: 0, n, n, ..., n:: ::
+Denote the eigenvalues of the Adjacency matrix of the complete bipartite graph:: +sqrt(n*m), -sqrt(n*m), 0, ..., 0:: ::
+Define a connected graph:: A connected graph is a graph where there is a path between every pair of vertices:: ::
+Define a connected component:: A connected component is a maximal connected subgraph:: ::
+Define a tree:: A tree is a connected graph with no cycles:: ::
+Define a forest:: A forest is a graph with no cycles:: ::
+Define a bridge:: A bridge is an edge whose removal increases the number of connected components:: ::
+Complete the sentence, a tree only has ... type edges:: bridge:: ::
+Number of edges in a tree with n vertices:: n-1:: ::
+Complete the sentence, a graph with n vertices and e edges has at least ... connected components:: n-e:: ::
+Every tree has a ...:: leaf:: ::
+G is a tree iff ...(x2):: (1) G is connected and has n vertices and n-1 edges, (2) G has no cycles and n-1 edges:: ::
+In a tree there is ... path between any two vertices:: exactly one:: ::
+State Cayley's formula:: There are n^{n-2} trees on n vertices:: ::
+Define the adjacency matrix of a graph:: The adjacency matrix of a graph is a matrix where the rows and columns are indexed by the vertices and the entry is 1 if the vertices are adjacent and 0 otherwise:: ::
+what is a_{ij}^n in the adjacency matrix:: the number of walks of length n from i to j:: ::
+what is the number of triangles in a graph in terms of the adjacency matrix:: trace(A^3)/6:: ::
+How to show that u is in the column span of M:: show that if a vector is orthogonal to M it is orthogonal to u and vice versa:: ::
+Puzzle given a graph each vertex has a switch that can be on or off, we can flip the switch of a vertex and all its neighbours, can we make all the switches off:: yes as (A+Id)v = 1:: ::
+Define graph:: A graph is a pair G=(V,E) where V is a set of vertices and E is a set of edges:: ::
+Maximum number of edges in a graph with n vertices:: n choose 2:: ::
+sum of degrees of a graph:: 2|E|:: ::
+in any graph there are an ... number of vertices with odd degree:: even:: ::
+Define a bipartite graph:: A bipartite graph is a graph where the vertices can be partitioned into two sets such that every edge has one vertex in each set:: ::
+A subgraph is bipartite iff ...:: it does not contain an odd cycle:: ::
+Every graph contains a subgraph with ....:: at least half of the edges:: ::
