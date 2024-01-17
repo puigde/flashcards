@@ -6,7 +6,7 @@ Define Directed Graph:: A directed graph is a graph where the edges have a direc
 Complete the Theorem, A directed graph G has an Eulerian tour iff ...:: G is connected and the in-degree of all vertices is equal to the out-degree of all vertices:: ::
 Define Hamiltonian Path:: A Hamiltonian path is a path that visits every vertex exactly once:: ::
 Define Hamiltonian Cycle:: A Hamiltonian cycle is a cycle that visits every vertex exactly once:: ::
-Complete the sentence, If G has a hamiltonian cycle then each vertex is incident to ...:: 2 edges of G:: ::
+Complete the sentence, If G is Hamiltonian then each vertex is incident to ...:: 2 edges of G:: ::
 Name three families of graphs that are Hamiltonian and one that is not:: Complete graphs; Bipartite graphs of the form K_{n n}; Cycles; Trees are not Hamiltonian and bipartite graphs with K_{n m} and n!=m are also not Hamiltonian:: ::
 Complete the theorem if n >= ... and d(G) >= ... then G is Hamiltonian:: 3; n/2:: ::
 Define R(s1; s2; ...; sk):: The Ramsey number R(s1; s2; ...; sk) is the smallest n such that every graph G with n vertices contains a clique of size sk or an independent set of size sk:: ::
