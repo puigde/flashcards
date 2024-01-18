@@ -65,7 +65,7 @@ A geometric graph with no pair of avoiding edges has ...:: 2n-2 edges:: ::
 Define the chromatic number of a graph:: The chromatic number of a graph is the minimum number of colors needed to color the vertices such that no two adjacent vertices have the same color:: ::
 Define the clique number of a graph and give a bound for the chromatic number:: W(G) \leq \chi(G):: ::
 Define the max size of an independent set and give a bound for the chromatic number:: \alpha(G) \leq n/\chi(G):: ::
-Define \delta(G) and give a bound for \chi(G):: \delta(G) is max_{v \in G}(deg(v))\chi(G) \leq \delta(G) + 1:: ::
+Define \Delta(G) and give a bound for \chi(G):: \Delta(G) is max_{v \in G}(deg(v))\chi(G) \leq \Delta(G) + 1:: ::
 Define the chromatic polynomial of a graph:: The chromatic polynomial of a graph is the number of ways to color the vertices of the graph with k colors such that no two adjacent vertices have the same color:: ::
 For a graph on p verives the chromatic polynomial is a polynomial of degree ...:: p:: ::
 The chromatic polynomial of a non-connected graph is ...:: the product of the chromatic polynomials of its components:: ::
