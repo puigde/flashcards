@@ -25,8 +25,8 @@ Define R(s,t):: R(s,t) is the minimum number n such that if we colour the edges 
 R(3,3)=...:: 6:: ::
 R(3,3,3)=...:: 17:: ::
 R(s,t)<=... (as a recurrence):: R(s-1,t)+R(s,t-1):: ::
-R(s,t)<= ... (as a number):: s-1 choose s+t-2:: ::
-In particular R(s,s)<=...:: s-1 choose 2s-2 <= 2^(2s-2):: ::
+R(s,t)<= ... (as a number):: s+t-2 choose s-1:: ::
+In particular R(s,s)<=...:: 2s-2 choose s-1 <= 2^(2s-2):: ::
 Complete the sentence Ramsey is true ...:: also for infinite graphs, in any two coloring of the edges of the complete graph on \mathbb{N} there is an infinite monochromatic subgraph:: ::
 Complete the sentence, Every sequence of real numbers has a ... in particular every bounded sequence has a ...:: monotone subsequence, converging subsequence:: ::
 Complete the theorem, There are colorings of the edges of the complete graph on ... vertices with no ...:: 2^s, monochromatic K_s:: ::
