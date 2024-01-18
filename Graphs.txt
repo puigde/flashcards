@@ -83,7 +83,7 @@ Complete the theorem, There is a subgraph of G with average degree ... with mini
 State the Cauchy Binet Formula:: let A, B two kxm matrices then det(AB^T) = \sum_{S \in [m]^k} det(A_S) det(B_S):: ::
 Define Ex(G, n):: Ex(G, n) is the maximum number of edges in a graph on n vertices that does not contain G as a subgraph:: ::
 Ex(K3, n) = ...:: n^2/4:: ::
-Ex(K_r, n) = ...:: 0.5 * n^2 * (1-1/(r-1)) = 2 choose r-1 * n^2:: ::
+Ex(K_r, n) = ...:: 0.5 * n^2 * (1-1/(r-1)) = r-1 choose 2 * n^2:: ::
 Give a lower bound for Ex(H, n) if H is not bipartite:: n^2/4:: ::
 The prüffer to tree is a ...:: bijection:: ::
 Define the vertex incidence matrix:: The vertex incidence matrix is a matrix where the rows are indexed by the vertices and the columns by the edges and the entry is 1 if the vertex is incident to the edge and 0 otherwise:: ::
