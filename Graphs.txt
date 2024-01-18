@@ -9,7 +9,7 @@ Define Hamiltonian Cycle:: A Hamiltonian cycle is a cycle that visits every vert
 Complete the sentence, If G is Hamiltonian then each vertex is incident to ...:: 2 edges of G:: ::
 Name three families of graphs that are Hamiltonian and one that is not:: Complete graphs; Bipartite graphs of the form K_{n n}; Cycles; Trees are not Hamiltonian and bipartite graphs with K_{n m} and n!=m are also not Hamiltonian:: ::
 Complete the theorem if n >= ... and d(G) >= ... then G is Hamiltonian:: 3; n/2:: ::
-Define R(s1; s2; ...; sk):: The Ramsey number R(s1; s2; ...; sk) is the smallest n such that every graph G with n vertices contains a clique of size sk or an independent set of size sk:: ::
+Define R(s1; s2; ...; sk):: The Ramsey number R(s1; s2; ...; sk) is the smallest n such that any coloring of the edges of K_n with k colors contains a monochromatic copy of K_{s_i} for some i:: ::
 Complete the theorem R(s1; s2; ...; sk) is ...:: R(s1; s2; ...; sk) is well defined:: ::
 State Schur's theorem:: For all k>=1 if there is n(k) such that in any colouring of the integers 1 to n(k) with k colours there is a monochromatic solution to x+y=z:: ::
 State Fermat's Last Theorem:: For all n>=3 there are no positive integers x, y, z such that x^n+y^n=z^n:: ::
