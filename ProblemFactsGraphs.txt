@@ -6,7 +6,7 @@ Eigenvalues(nId + A):: n + eigenvalues(A):: ::
 (INFORMAL BUT WORKS) If a martix can be represented as block matrix with square blocks and simetrics we can compute the eigenvalues on the blocks and scale them by block size:: ::
 There are ... spanning trees for K_r,s:: r^(s-1) * s^(r-1):: ::
 The rank of the Laplacian matrix of a graph is ...:: n - number of connected components:: ::
-If a graph has paths of at most length 2 then the number of edges is at most ...:: :: O(n):: ::
+If a graph has paths of at most length 2 then the number of edges is at most ...::O(n):: ::
 The sum of the degrees of a tree is ...:: 2(n-1):: ::
 Adding an edge to a tree gives a graph with ...:: exactly one cycle:: ::
 Adding k edges to a tree gives at most ... cycles:: 2^k - 1:: ::
@@ -32,7 +32,7 @@ For any matching M in G there is a maximum matching M' that includes ...:: all t
 If A is a bi-stochastic matrix then A = sum lambda_i * P_i is possible where P_i are ... matrices:: bi-stochastic, permutation:: ::
 G is a graph that can be drawn such that every edge is crossed by at most one other edge E<= ... :: sqrt(32) * n^2:: ::
 G has at least ... distinct paths of three edges:: e^3/n^2:: ::
-It is not possible to draw more than ... diagonals of a regular n-gon in the plane without two of them crossing each other:: ::
+It is not possible to draw more than ... diagonals of a regular n-gon in the plane without two of them crossing each other:: n-3:: ::
 G is planar, G is also bipartite iff...:: there is a drawing of G where all bounded faces are of even size:: ::
 Let G be a planar graph on n vertices such that can be drawn in the plane with every face of size at least k, E<=...:: (k/(k-2)) * (n-2):: ::
 If a graph does not have any cycle smaller or equal to 2k then the number of edges is at most ...:: 10n^(3/2):: ::
