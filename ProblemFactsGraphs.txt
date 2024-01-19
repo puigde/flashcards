@@ -24,13 +24,13 @@ If n is large enough we can find .... points in convex position and ... pairwise
 A matrix containts elements from 1...n n times. We can find a permutation ...:: such that all rows contain elements from 1...n or that all columns contain elements 1...n:: ::
 In a nxn matrix with numbers from 1,...,n^2 we need ... steps of all-rows or all-column permutations to sort it from left-up to right-down:: 3:: ::
 For a k-regular bipartite graph edges can be partitioned into ...:: k perfect matchings:: ::
-In any graph the size of the minimum vertex cover is at most ... the size of the maximum matching:: :: 2:: ::
+In any graph the size of the minimum vertex cover is at most ... the size of the maximum matching:: twice:: ::
 In a bipartite graph a necessary and sufficient condition for a matching of A with k vertices of B to exist is that:: k * |X| <= |N(X)| for any X subset of A:: ::
 If G is bipartite and all deg(A)>=k and all deg(b)<=k then ...:: G has a matching of all the vertices in A:: ::
 For G a bipartite graph if there is a matching for some vertices in A and another matching for some vertices in B... this ... happens for non-bipartite graphs:: there is a matching that includes the union of all matched vertices, not always:: ::
 For any matching M in G there is a maximum matching M' that includes ...:: all the vertices in M:: ::
 If A is a bi-stochastic matrix then A = sum lambda_i * P_i is possible where P_i are ... matrices:: bi-stochastic, permutation:: ::
-G is a graph that can be drawn such that every edge is crossed by at most one other edge E<= ... :: sqrt(32):: ::
+G is a graph that can be drawn such that every edge is crossed by at most one other edge E<= ... :: sqrt(32) * n^2:: ::
 G has at least ... distinct paths of three edges:: e^3/n^2:: ::
 It is not possible to draw more than ... diagonals of a regular n-gon in the plane without two of them crossing each other:: ::
 G is planar, G is also bipartite iff...:: there is a drawing of G where all bounded faces are of even size:: ::
