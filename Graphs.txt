@@ -74,7 +74,7 @@ State a way of constructing graphs with W(G)=2 and large \chi(G):: get \chi(G) c
 State the four colour theorem informally:: Consider a setup where we have a map of the world and we want to color the countries such that no two adjacent countries have the same color, then we can do it with 4 colors:: ::
 Complete the sentence the chromatic number of a planar graph is between ... and ... and in space in between ... and ...:: 5 and 7 and 6 and 15:: ::
 The chromatic polynomial of a tree is ...:: k(k-1)^{n-1}:: ::
-The chromatic polynomial of a cycle is ...:: k(k-1)^{n} + (-1)^n (k-1):: ::
+The chromatic polynomial of a cycle is ...:: (k-1)^{n} + (-1)^n (k-1):: ::
 The chromatic polynomial of a complete graph is ...:: k(k-1)(k-2)...(k-n+1):: ::
 State Kovari-Sos-Turan theorem:: If G does not contain K_r,s then G has O(n^{2-1/r}) edges:: ::
 State Bondy-Simonovich theorem:: If G does not contain C_{2r} then G has less than n^{1+1/r} edges:: ::
