@@ -1,0 +1,48 @@
+A graph with n vertices and n edges has at most ... spanning trees :: n:: ::
+The minimum number of spanning trees in a connected graph is ...:: 3:: ::
+A Prüfer encoding has length ...:: n-2:: ::
+There are ... many trees on 22 vertices with 4 vertices of degree 3, 3 vertices of degree 5 and 15 leaves:: (22 choose 4) * (18 choose 3) * (20!)/(2!^4 * 4!^3):: ::
+Eigenvalues(nId + A):: n + eigenvalues(A):: ::
+(INFORMAL BUT WORKS) If a martix can be represented as block matrix with square blocks and simetrics we can compute the eigenvalues on the blocks and scale them by block size:: ::
+There are ... spanning trees for K_r,s:: r^(s-1) * s^(r-1):: ::
+The rank of the Laplacian matrix of a graph is ...:: n - number of connected components:: ::
+If a graph has paths of at most length 2 then the number of edges is at most ...:: :: O(n):: ::
+The sum of the degrees of a tree is ...:: 2(n-1):: ::
+Adding an edge to a tree gives a graph with ...:: exactly one cycle:: ::
+Adding k edges to a tree gives at most ... cycles:: 2^k - 1:: ::
+When n is even, the set of edges in the complete graph K_n can be partitioned into ... sets of ... n-1 edges such that each set forms a ... on the vertices of K_n:: n/2 sets, n-1 edges, tree:: ::
+We can always divide the vertices of a graphs into two sets such that every vertex has ...:: more edges in between the sets than inside itself:: ::
+The edges of G can be partioned into at most ...  tours:: n/2:: ::
+There is a closed curve in the plane that crosses every edge of a ...:: bipartite planar graph:: ::
+For G' the edge-graph of G, if G has an euler tour then G' has a ...:: hamiltonian cycle and also an eulerian cycle:: ::
+A graph on n vertices with (n-1)(n-2)/2 +2 edges has ...:: a hamiltonian cycle:: ::
+N tennis players play ... games so that every two play .... It is always possible to arrange the people so that every person won the person standing to its left:: n choose 2, once:: ::
+If we color the set of rationals by k colors one can find a monochromatic ...:: triple such that xy=z:: ::
+In any 2-coloring of the edges K_6 there are ...:: 2 monochromatic triangles:: ::
+There is an n(r) large enough such that if we color K_n,n with two colors there is...:: a monochromatic complete bipartite subgraph K_r,r:: ::
+If n is large enough we can find .... points in convex position and ... pairwise crossing segments of points:: 2c, c:: ::
+A matrix containts elements from 1...n n times. We can find a permutation ...:: such that all rows contain elements from 1...n or that all columns contain elements 1...n:: ::
+In a nxn matrix with numbers from 1,...,n^2 we need ... steps of all-rows or all-column permutations to sort it from left-up to right-down:: 3:: ::
+For a k-regular bipartite graph edges can be partitioned into ...:: k perfect matchings:: ::
+In any graph the size of the minimum vertex cover is at most ... the size of the maximum matching:: :: 2:: ::
+In a bipartite graph a necessary and sufficient condition for a matching of A with k vertices of B to exist is that:: k * |X| <= |N(X)| for any X subset of A:: ::
+If G is bipartite and all deg(A)>=k and all deg(b)<=k then ...:: G has a matching of all the vertices in A:: ::
+For G a bipartite graph if there is a matching for some vertices in A and another matching for some vertices in B... this ... happens for non-bipartite graphs:: there is a matching that includes the union of all matched vertices, not always:: ::
+For any matching M in G there is a maximum matching M' that includes ...:: all the vertices in M:: ::
+If A is a bi-stochastic matrix then A = sum lambda_i * P_i is possible where P_i are ... matrices:: bi-stochastic, permutation:: ::
+G is a graph that can be drawn such that every edge is crossed by at most one other edge E<= ... :: sqrt(32):: ::
+G has at least ... distinct paths of three edges:: e^3/n^2:: ::
+It is not possible to draw more than ... diagonals of a regular n-gon in the plane without two of them crossing each other:: ::
+G is planar, G is also bipartite iff...:: there is a drawing of G where all bounded faces are of even size:: ::
+Let G be a planar graph on n vertices such that can be drawn in the plane with every face of size at least k, E<=...:: (k/(k-2)) * (n-2):: ::
+If a graph does not have any cycle smaller or equal to 2k then the number of edges is at most ...:: 10n^(3/2):: ::
+In how many ways can we color C_5 with 10 colors?:: 5 choose 0 * 10^5 - 5 choose 1 * 10^4 + 5 choose 2 * 10^3 - 5 choose 3 * 10^2 + 5 choose 4 * 10 + (-1)^5 * 10:: ::
+In a bipartite graph, if G does not contain a cycle of lenght 4, E <=:: 10n*sqrt(m)+10m:: ::
+The complete bipartite contains a copy of ... bipartite:: any:: ::
+(1/n) * sum a_i <= ...:: sqrt_k(1/n * sum a_i^k):: ::
+Give two bounds for Ex(T_k, n):: 10k^2n, 10kn:: ::
+A graph does not contain a cycle of length 5, E<=:: n^2/4+100n:: ::
+A graph where all paths are of lenght at most two has:: at most n edges:: ::
+If G does not contain a cycle of even length...:: no two cycles share an edge:: ::
+The positive version of E has non-zero determinant iff ...:: the n edges form a subgraph with one cycle of odd length in each connected component:: ::
+Let G be a graph with no cycle of even length, E>= (3/2)*n:: ::
